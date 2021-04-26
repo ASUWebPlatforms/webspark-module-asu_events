@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.events
+    - field.field.block_content.events.field_events_feed_filter
+    - field.field.block_content.events.field_events_items_to_display
+_core:
+  default_config_hash: CRrZUfxrZ7PDOLYk8ACcBUN4gzWRTqsQPu08Njgc6js
+id: block_content.events.default
+targetEntityType: block_content
+bundle: events
+mode: default
+content:
+  field_events_feed_filter:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_events_items_to_display:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
+
