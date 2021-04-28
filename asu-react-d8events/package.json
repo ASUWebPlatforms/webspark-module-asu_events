@@ -1,0 +1,23 @@
+{
+  "name": "d8events",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "drupal": "react-app-rewired build && yarn run drupal:dist",
+    "drupal:dist": "cd build && cp static/js/*.js ../../js/asu_events_react.min.js && cp static/css/*.css ../../css/asu_events.css"
+  },
+  "devDependencies": {
+    "react-app-rewired": "^1.5.2"
+  }
+}
