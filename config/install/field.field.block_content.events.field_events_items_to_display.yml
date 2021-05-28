@@ -6,8 +6,6 @@ dependencies:
     - field.storage.block_content.field_events_items_to_display
   module:
     - options
-_core:
-  default_config_hash: 6w5Yh_F22IqF-0R0SOJPjj08TJvfRfW_pkhcmuwYrdc
 id: block_content.events.field_events_items_to_display
 field_name: field_events_items_to_display
 entity_type: block_content
@@ -22,4 +20,3 @@ default_value:
 default_value_callback: ''
 settings: {  }
 field_type: list_string
-
