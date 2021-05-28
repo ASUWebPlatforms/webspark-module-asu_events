@@ -4,8 +4,6 @@ dependencies:
   config:
     - block_content.type.events
     - field.storage.block_content.field_events_feed_filter
-_core:
-  default_config_hash: dOnStxBz2V0nOZ-SzkHgKsYRYLnxx9kT583aq-WxK10
 id: block_content.events.field_events_feed_filter
 field_name: field_events_feed_filter
 entity_type: block_content

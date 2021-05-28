@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - block_content.type.events
-    - field.field.block_content.events.field_archon_menu_settings
+    - field.field.block_content.events.field_anchor_menu_settings
     - field.field.block_content.events.field_events_feed_filter
     - field.field.block_content.events.field_events_items_to_display
     - field.field.block_content.events.field_spacing_bottom
@@ -17,7 +17,7 @@ targetEntityType: block_content
 bundle: events
 mode: default
 content:
-  field_archon_menu_settings:
+  field_anchor_menu_settings:
     weight: 0
     label: hidden
     settings:
