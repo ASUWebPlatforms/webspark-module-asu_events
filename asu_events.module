@@ -1,4 +1,4 @@
-asu_events.module<?php
+<?php
 
 use Drupal\Core\Url;
 
