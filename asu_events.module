@@ -1,4 +1,4 @@
-asu_events.module<?php
+<?php
 
 use Drupal\Core\Url;
 
@@ -32,16 +32,10 @@ function asu_events_preprocess_block(&$variables) {
     if ($block->field_events_cta_color->value) {
       $events_block->ctaButton->color = $block->field_events_cta_color->value;
     }
-    if ($block->field_card_cta_color->value) {
-      //$events_block->ctaButton->color = $block->field_card_cta_color->value;
-    }
-    if ($block->field_news_items_to_display->value) {
-      $events_block->maxItems = $block->field_news_items_to_display->value;
-    }
     if ($block->field_events_items_to_display->value) {
       $events_block->display = $block->field_events_items_to_display->value;
     }
-    $events_block->dataSource->url = '/asu-news-feed/';
+    $events_block->dataSource->url = '/asu-events-feed/';
     if ($block->field_events_feed_filter->value) {
       $events_block->dataSource->filters = $block->field_events_feed_filter->value;
     }

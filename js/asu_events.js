@@ -11,7 +11,6 @@
 
       for (var eventsId in settings.asu.components.asu_events) {
         var eventsData = settings.asu.components.asu_events[eventsId];
-        console.log();
         switch(eventsData.display) {
           case 'All':
             events.initCardsListEventsComponent({
@@ -19,10 +18,7 @@
               props: {
                 header: eventsData.header,
                 ctaButton: eventsData.ctaButton,
-                dataSource: {
-                  url:
-                    '/asu-events-feed/',
-                },
+                dataSource: eventsData.dataSource,
               }
             })
             break;
@@ -32,11 +28,7 @@
               props: {
                 header: eventsData.header,
                 ctaButton: eventsData.ctaButton,
-                dataSource: {
-                  url:
-                    '/asu-events-feed/',
-                },
-                // changing max items rendered
+                dataSource: eventsData.dataSource,
                 maxItems: 3,
               }
             })
@@ -47,17 +39,13 @@
               props: {
                 header: eventsData.header,
                 ctaButton: eventsData.ctaButton,
-                dataSource: {
-                  url:
-                    '/asu-events-feed/',
-                  // Example with filters(not needed)
-                  filters: "easy_on_the_wallet,alumni_association,staff,sports",
-                },
+                dataSource: eventsData.dataSource,
+                maxItems: 3,
               }
             })
             break;
         }
-        //delete settings.asu.components.asu_events[eventsId];
+        delete settings.asu.components.asu_events[eventsId];
       }
     }
   };
