@@ -12,7 +12,7 @@ entity_type: block_content
 bundle: events
 label: 'Items to Display'
 description: ''
-required: false
+required: true
 translatable: false
 default_value:
   -
