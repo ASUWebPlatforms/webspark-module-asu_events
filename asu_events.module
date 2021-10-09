@@ -88,12 +88,9 @@ function asu_events_config_readonly_whitelist_patterns() {
  * {@inheritdoc}
  */
 function asu_events_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
-  if (!empty($variables['element']['#context'])) {
-    if (!empty($variables['element']['#context']['data-embed-button'])) {
-      $data_embed_button = $variables['element']['#context']['data-embed-button'];
-      $block_type = $variables['element']['#entity']->bundle();
-      $suggestions[] = 'entity_embed_container__embed_button_' . $data_embed_button . '__' . $block_type;
-    }
+  if (!empty($variables['element']['#entity'])) {
+    $block_type = $variables['element']['#entity']->bundle();
+    $suggestions[] = 'entity_embed_container__embed_button' . '__' . $block_type;
   }
 }
 
@@ -105,9 +102,9 @@ function asu_events_theme_suggestions_alter(array &$suggestions, array $variable
 function asu_events_theme($existing, $type, $theme, $path) {
   $templates = $path . '/templates';
   return [
-    'entity_embed_container__embed_button_embed_block__events' => [
-      'base hook' => 'entity_embed_container',
-      'render element' => 'element'
+    'entity_embed_container__embed_button__events' => [
+    'base hook' => 'entity_embed_container',
+    'render element' => 'element'
     ]
   ];
 }
