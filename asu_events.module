@@ -14,7 +14,12 @@ function asu_events_preprocess_block(&$variables) {
 
   if ($variables['derivative_plugin_id'] == 'events') {
     $rand_id = random_int(0, PHP_INT_MAX);
-    $events_block = new \stdClass();
+    $events_block = (object)[
+      'header' => new \stdClass(),
+      'ctaButton' => new \stdClass(),
+      'dataSource' => new \stdClass(),
+    ];
+
     $variables['events_id'] = 'events-wrapper-' . $rand_id;
     $block = $variables['content']['#block_content'];
 
