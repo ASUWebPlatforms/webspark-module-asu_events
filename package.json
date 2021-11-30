@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "@asu-design-system/component-events": "^1.2.2"
+  }
 }
