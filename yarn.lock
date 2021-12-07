@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asu-design-system/component-events@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-events/-/component-events-1.2.2.tgz#72ccb40b9e74620862d4d91de44ea665de0b9b86"
-  integrity sha512-6f6BA1tP8Vl4AB9+EW5vqPAcVR42y8NAUsuf9Scd8B0a2a0TT/AXavJxH99qxcLqcW1h8pcdqmlYX+Y3z3G/ig==
+"@asu-design-system/component-events@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.web.asu.edu/@asu-design-system%2fcomponent-events/-/component-events-1.2.3.tgz#edaea69b5b07cc2afad28ee785b548d1c180bdeb"
+  integrity sha512-WfloWjxrLSJI/JZakAtwmszByKaVTF21jRLCywUUi/J3YcT5flJsf5nRuVcfbNeFtfmlRxZFOJ49sOqQCpPqnw==
   dependencies:
     "@asu-design-system/components-core" "^1.0.0"
     "@babel/plugin-transform-react-jsx" "^7.13.12"
