@@ -19,6 +19,7 @@
                 header: eventsData.header,
                 ctaButton: eventsData.ctaButton,
                 dataSource: eventsData.dataSource,
+                maxItems: 500,
               }
             })
             break;
