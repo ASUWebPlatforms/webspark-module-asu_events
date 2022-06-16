@@ -12,3 +12,4 @@ node_modules/@asu-design-system/component-events/dist/*
 !node_modules/@asu-design-system/component-events/dist/vendor.production.js
 !node_modules/@asu-design-system/component-events/dist/asuEvents.umd.js
 !node_modules/@asu-design-system/component-events/dist/vendor.umd.js
+.idea

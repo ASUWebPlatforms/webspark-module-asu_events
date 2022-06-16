@@ -61,7 +61,7 @@ function asu_events_preprocess_block(&$variables) {
 /**
  * Implements hook_config_readonly_whitelist_patterns();
  * Make all the config files from this module readonly.
- * @return type
+ * @return array
  */
 function asu_events_config_readonly_whitelist_patterns() {
   // Get all the module configuration files.
